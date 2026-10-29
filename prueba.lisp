@@ -8,19 +8,7 @@
 (defun sumaLista (lista) 
 	(cond ((null lista) 0)
 	
-	(t (+ (car lista) (sumaLista (cdr lista))))
-
-	)
+	(t (+ (car lista) (sumaLista (cdr lista)))))
 
 )
-
-
-
-defun sumaLista(lista)
-    (cond (null lista)0)
-
-    (t(+ (car lista)(sumaLista)(cdr lista))))
-
-    )
-
-)
+(parImpar 4)

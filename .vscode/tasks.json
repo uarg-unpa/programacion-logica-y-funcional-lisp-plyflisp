@@ -1,0 +1,41 @@
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Lisp: Ejecutar archivo actual",
+      "type": "shell",
+      "command": "sbcl",
+      "args": ["--script", "${file}"],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Lisp: Consola interactiva",
+      "type": "shell",
+      "command": "sbcl",
+      "args": ["--load", "${file}"],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": true,
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

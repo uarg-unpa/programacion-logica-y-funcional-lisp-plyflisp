@@ -22,3 +22,27 @@
   (format t "Factorial de 5: ~a~%" (factorial 5))
   (mostrar-lista '(1 2 3 4 5))
   (format t "¡Ejecución completada!~%"))
+
+(defun() parImpar(X)
+   (cond(=(mod X 2) 0 ) (print "PAR")
+        (t (print "IMPAR")))
+)
+
+(defun sumaLista(lista)
+    (cond (null lista)0)
+
+    (t(+ (car lista)(sumaLista)(cdr lista))))
+
+    )
+)
+
+(defun sumaBinaria (X Y)
+		(cond ((and (= X 0)(= Y 0)) (print "1"))
+				((and (= X 1)(= Y 1)) (print "0"))
+				((and (= X 1) (= Y 0)) (print "1"))
+				((and (= X 0)(= Y 1)) (print "1"))
+				(t (print "error"))
+				)
+
+)
+
